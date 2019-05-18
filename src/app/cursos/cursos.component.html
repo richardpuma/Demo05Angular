@@ -1,0 +1,3 @@
+<h1>{{titulo}}</h1> <!-- interpolacion -->
+<h2 *ngIf="Flag; else DesaprobadorBlock"> Flag activo: {{cursos.Materia1}}</h2>
+<ng-template #DesaprobadorBlock> Flag desactivado: {{cursos.Materia2}}</ng-template>

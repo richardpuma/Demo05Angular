@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-@NgModule({
+import {CursosComponent} from './cursos/cursos.component';
+//import { PersonaComponent } from './persona/persona.component';
+
+@NgModule({ //decorador
   declarations: [
-    AppComponent
+    AppComponent,
+    CursosComponent //Componentes declarados
+    //PersonaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule //Modulos importados
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [], //Servicios que necesita
+  bootstrap: [AppComponent] // Se define el componente inicial
 })
 export class AppModule { }
